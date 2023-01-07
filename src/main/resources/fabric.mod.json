@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "xpwithdraw",
+  "version": "${1.0.0}",
+
+  "name": "Xp Withdraw",
+  "description": "Allows you to withdraw experience orbs from your xp bar",
+  "authors": [
+    "Stiky"
+  ],
+  "contact": {
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/xpwithdraw/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.xpwithdraw.XpWithdraw"
+    ],
+    "client": [
+      "net.xpwithdraw.XpWithdrawClient"
+    ]
+  },
+  "mixins": [
+    "xpwithdraw.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.2",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
